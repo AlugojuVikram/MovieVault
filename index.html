@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Movies Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <label class="switch">
+        <input type="checkbox" id="modeToggle">
+        <span class="slider round"></span>
+    </label>
+    <h1>Movie Magic Vault</h1>
+    <br><br>
+    <div class="input-container">
+        <input type="text" id="searchInput" placeholder="Search For a Movie">
+        <button id="searchButton"><i class="fa-solid fa-magnifying-glass fa-2x"></i></button>
+    </div>
+    <div class="filter">
+        <select id="genreFilter">
+            <option value="">All Genres</option>
+        </select>
+    </div>
+
+    <br><br>
+    <div class="wrapper">
+        <button id="nowPlayingButton" class="button1">Now Playing</button>
+        <button id="topRatedButton" class="button1">Top Rated</button>
+    </div>
+    <div class="results"></div>
+    <div class="pagination">
+        <button id="prevButton"><i class="fa-solid fa-chevron-left fa-lg"></i></button>
+        <button id="nextButton"><i class="fa-solid fa-chevron-right fa-lg"></i></button>
+    </div>
+    </div>
+
+    <hr>
+    <footer>
+        <div id="lastFooter">
+            <ul>
+                <li>
+                    <a href="">About Us</a>
+                </li>
+                <li>
+                    <a href="">Contact Us</a>
+                </li>
+                <li>
+                    <a href="">Terms</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+        <script src="script.js"> </script>
+        
+</body>
+
+</html>
